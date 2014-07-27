@@ -1,0 +1,16 @@
+/*
+ * Override Foundation 5 styles
+ */
+//font
+$h1-font-size: rem-calc(34);
+$h2-font-size: rem-calc(27);
+$h3-font-size: rem-calc(17);
+$h4-font-size: rem-calc(13);
+$h5-font-size: rem-calc(8);
+$h6-font-size: 1rem;
+
+$topbar-bg-color: $base-color;
+$topbar-bg: $base-color;
+$topbar-dropdown-bg: $base-color;
+
+$anchor-font-color: $base-text-color;

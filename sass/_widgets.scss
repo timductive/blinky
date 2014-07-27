@@ -1,0 +1,59 @@
+/*
+ * ghosthunter - search
+ */
+#ub-search {
+}
+#ub-search .ub-search-input {
+  color: #fff;
+  box-shadow: none;
+}
+@media only screen and (max-width: 40em) {
+  #ub-search .ub-search-input {
+    width: 80%;
+    margin: 1rem auto 1.5rem auto;
+  }
+}
+
+.ub-search-clear-toggle {
+  color: #D94439;
+  cursor: pointer;
+  float: right;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1px;
+  line-height: 1;
+}
+
+.ub-search-results {
+  color: #686868;
+  background: #f2f2f2;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  position: absolute;
+  z-index: 101;
+  text-align: left;
+  margin-top: 5px;
+  padding: 15px;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+}
+.ub-search-results.ub-search-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.ub-search-results-amount {
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
+  display: block;
+  font-size: 1rem;
+  font-weight: 200;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+.ub-search-results-title {
+  display: block;
+  margin: 0 0 15px;
+  font-size: 0.85rem;
+}

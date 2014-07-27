@@ -1,0 +1,130 @@
+@import 'variables';
+
+/*
+ * General Styles
+ */
+#ub-container {
+  height: 100%;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-heigh;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+ * Icons Font
+ */
+.ub-icons {
+  color: $base-color;
+}
+
+/*
+ * Header
+ */
+#ub-header {
+  padding: 0;
+  color: $base-text-color;
+  background: $base-color;
+  .ub-blog-logo {
+    padding-top: 10rem;
+  }
+  .ub-blog-cover {
+    min-height: 25rem;
+    width: 100%;
+    background-position: top center;
+    background-size: cover;
+  }
+  .top-bar-section > .right {
+    padding-top: 0.1rem;
+  }
+}
+
+/*
+ * Main Body
+ */
+#ub-main {
+  .ub-block {
+    &:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+  .ub-post-meta {
+    color: $base-color;
+    font-size: 0.75rem;
+  }
+  .ub-block {
+    padding: 1.5rem;
+    margin: 1.0rem auto;
+  }
+  .ub-post-header {
+    background: $base-background;
+    .ub-post-title {
+      padding: 0.1rem 0.1rem 0 0;
+    }
+  }
+  .ub-post-time {
+    margin: 6rem;
+  }
+  .ub-post-excerpt {
+    line-height: 1.25rem;
+    font-size: 1.0rem;
+    color: #000;
+    background: #fff;
+    font-weight: 300;
+    padding: 1.0rem;
+    border-left: 1px solid #d8d8d8;
+    border-right: 1px solid #d8d8d8;
+  }
+  .ub-post-meta {
+    background: $base-text-color;
+    border-left: 1px solid #d8d8d8;
+    border-right: 1px solid #d8d8d8;
+    border-bottom: 2px solid #ddd;
+    border-top: 1px solid #e8e8e8;
+    .bar {
+      height: 3rem;
+      padding-top: 0.75rem;
+      border-right: 1px solid #d8d8d8;
+    }
+  }
+  .ub-post-tags a {
+    color: $base-color;
+  }
+  .readme {
+    background: $button-base-color;
+    margin: 0.5rem;
+  }
+  .ub-featured-post {
+    line-height: 3.25rem;
+    font-size: 2rem;
+    color: $button-base-color;
+  }
+}
+
+/*
+ * Pagination
+ */
+#ub-pagination {
+  .ub-block {
+    padding: 1.0rem;
+    margin: 1.0rem auto;
+  }
+  .ub-pagination-item {
+    color: $base-background;
+  }
+}
+
+/*
+ * Footer
+ */
+#ub-footer {
+  color: $base-text-color;
+  background: $base-color;
+  font-size: $base-font-size - 0.3;
+  .ub-block {
+    padding: 0.75rem;
+    margin: 0.75rem auto;
+  }
+}

@@ -1,0 +1,57 @@
+<header id="ub-header">
+  {{#if @blog.cover}}
+    <div class="ub-blog-cover text-center" style="background-image: url({{@blog.cover}})">
+      {{#if @blog.logo}}
+        <div class="ub-blog-logo row">
+          <a href="{{@blog.url}}">
+            <img src="{{@blog.logo}}" alt="Blog Logo" />
+          </a></div>
+      {{/if}}
+    </div>
+  {{/if}}
+
+  {{! nav bar }}
+  <div class="ub-nav row">
+    <div class="small-4 columns">
+      <nav class="top-bar">
+        <section class="top-bar-section">
+          {{! navigation }}
+          <ul class="left">
+            <li><a href="{{@blog.url}}">Home</a></li>
+            <li><a href="{{@blog.url}}/about/" title="About">About</a></li>
+          </ul>
+        </section>
+      </nav>
+    </div>
+
+    <div class="small-4 columns">
+      <nav class="top-bar">
+        <section class="top-bar-section">
+          <ul class="right">
+            {{! serach }}
+            {{> widgets/search }}
+
+            {{! social networks }}
+            <a href="https://github.com/underbyte" title="github">
+              <li>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="ub-icons fa fa-github-alt fa-stack-1x"></i>
+                </span>
+              </li>
+            </a>
+            <a href="https://twitter.com/_underbyte" title="twitter">
+              <li>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="ub-icons fa fa-twitter fa-stack-1x"></i>
+                </span>
+              </li>
+            </a>
+          </ul>
+        </section>
+      </nav>
+    </div>
+
+  </div>
+</header>

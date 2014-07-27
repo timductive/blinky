@@ -1,0 +1,21 @@
+{
+  "name": "blinky",
+  "version": "0.0.1",
+  "homepage": "https://github.com/underbyte/blinky",
+  "authors": [
+    "Than Nguyen"
+  ],
+  "description": "Free Ghost Theme",
+  "keywords": [
+    "Ghost theme"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "foundation": "zurb/bower-foundation"
+  },
+  "devDependencies": {
+    "fastclick": "~1.0.2",
+    "fontawesome": "~4.1.0",
+    "bourbon": "~4.0.2"
+  }
+}
