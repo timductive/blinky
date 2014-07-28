@@ -12,13 +12,13 @@
 
   {{! nav bar }}
   <div class="ub-nav row">
-    <div class="small-4 columns">
-      <nav class="top-bar">
+    <div class="large-4 columns">
+      <nav class="top-bar" data-topbar>
         <section class="top-bar-section">
           {{! navigation }}
-          <ul class="left">
-            <li><a href="{{@blog.url}}">Home</a></li>
-            <li><a href="{{@blog.url}}/about/" title="About">About</a></li>
+          <ul>
+            <li><a href="{{@blog.url}}"><span>Home</span></a></li>
+            <li><a href="{{@blog.url}}/about/" title="About"><span>About</span></a></li>
           </ul>
         </section>
       </nav>

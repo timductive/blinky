@@ -5,7 +5,7 @@ var dirs,
 
 dirs = {
   js: {
-    filename: 'blinky.js',
+    filename: 'blinky.min.js',
     dest: 'assets/js',
     src: [
       'bower_components/fastclick/lib/fastclick.js',
