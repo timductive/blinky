@@ -35,6 +35,9 @@
     background-position: top center;
     background-size: cover;
   }
+  .right {
+    margin-top: 0.1rem;
+  }
 }
 
 /*
@@ -50,6 +53,7 @@
   .ub-post-meta {
     color: $base-color;
     font-size: 0.75rem;
+    padding: 0.5rem;
   }
   .ub-block {
     padding: 1.5rem;
@@ -59,10 +63,8 @@
     background: $base-background;
     padding: 0.25rem 0.5rem;
     .ub-post-title {
+      color: $base-text-color;
     }
-  }
-  .ub-post-time {
-    margin: 6rem;
   }
   .ub-post-excerpt {
     line-height: 1.25rem;
@@ -81,8 +83,6 @@
     border-bottom: 2px solid #ddd;
     border-top: 1px solid #e8e8e8;
     .bar {
-      height: 3rem;
-      padding-top: 0.75rem;
       border-right: 1px solid #d8d8d8;
     }
   }
@@ -91,7 +91,7 @@
   }
   .readme {
     background: $button-base-color;
-    margin: 0.3rem 0;
+    margin: 0;
     font-size: 0.9rem;
   }
   .ub-featured-post {

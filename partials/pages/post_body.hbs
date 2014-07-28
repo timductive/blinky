@@ -1,0 +1,92 @@
+<div id="ub-main" class="ub-post" role="main">
+  <div class="row">
+    <div class="large-12 columns">
+      {{#post}}
+        <article class="{{post-class}} ub-block">
+          <div class="ub-post-content">
+            {{! Post header}}
+            <div class="row ub-post-header">
+              <h2 class="ub-post-title">
+                {{#if featured}}
+                  <span class="ub-featured-post">
+                  <span class="fa fa-asterisk"></span>
+                </span>
+                {{/if}}
+                <span>{{{title}}}</span>
+              </h2>
+            </div>
+
+            {{! Post content }}
+            <div class="ub-post-excerpt row">
+              {{content}}
+            </div>
+
+            <div class="ub-post-meta row">
+              <div class="small-2 columns text-center">
+                <time class="ub-post-time" datetime="{{date format='MM-DD-YYYY'}}"><span class="fa fa-calendar"></span> {{date format="DD MMM YYYY"}}</time>
+              </div>
+              <div class="small-1 columns bar"></div>
+              <div class="small-10 columns text-left">
+                <span class="ub-post-tags">{{#if tags}}<span class="fa fa-tags"></span>{{/if}} {{tags}}</span>
+              </div>
+
+
+              <div class="ub-post-author row">
+                <div class="small-8 columns">
+                  <h3>About Author</h3>
+                  <div class="ub-author">
+                    <div class="ub-author-image">
+                      <img src="{{author.image}}" alt="{{author.name}}">
+                    </div>
+                    <div class="ub-author-name">
+                      <h3>{{author.name}}</h3>
+                    </div>
+                    <div class="ub-author-bio">
+                      <p>{{author.bio}}</p>
+                    </div>
+                  </div>
+                </div>
+
+                {{! Share buttons }}
+                <div class="ub-post-share row">
+                  <div class="small-4 columns">
+                    <h6 class="ub-post-share-title">Share this post</h6>
+
+                    <a class="ub-post-share-icon" href="http://twitter.com/share?text={{encode title}}&url={{url absolute="true"}}"
+                       onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                      <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="ub-icons fa fa-twitter fa-stack-1x"></i>
+                      </span>
+                    </a>
+                    <a class="ub-post-share-icon" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+                       onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                      <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="ub-icons fa fa-facebook fa-stack-1x"></i>
+                      </span>
+                    </a>
+                    <a class="ub-post-share-icon" href="https://plus.google.com/share?url={{url absolute="true"}}"
+                       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                      <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="ub-icons fa fa-google fa-stack-1x"></i>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </article>
+      {{/post}}
+
+      {{! comment section}}
+      <div class="ub-post-comments row">
+        {{> widgets/disqus }}
+      </div>
+
+    </div>
+  </div>
+</div>
